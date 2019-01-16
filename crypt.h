@@ -23,8 +23,10 @@
 
 using namespace std;
 
-char encrypt(const char&);
-char encryptUpper(const char&);
-char encryptLower(const char&);
+char encrypt(const char &);
+
+char encryptUpper(const char &);
+
+char encryptLower(const char &);
 
 #endif

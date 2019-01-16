@@ -12,13 +12,13 @@
 
 using namespace std;
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
 
     // Define a variable for the name of the input file
-    char* fileName;
+    char *fileName;
 
     // Check to see if there is an input value for the file
-    if(argc > 1) {
+    if (argc > 1) {
         //set the variable to the file name argument
         fileName = argv[1];
     } else {
@@ -53,7 +53,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Check to see if the buffer is full
-    while (strlen((char*)buffer) == x) {
+    while (strlen((char *) buffer) == x) {
         x *= 2;
         char bBuf[x];
         buffer = bBuf;
@@ -72,7 +72,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Make a pointer to the encrypted buffer
-    char* p = (char*)buffer2;
+    char *p = (char *) buffer2;
 
     // Open an output file, create one if it doesn't exist
     int fileDesc2 = open("encryptoutput.txt", O_RDWR | O_CREAT);

@@ -21,7 +21,7 @@ using namespace std;
    NOTES:      This function tests its parameter to see if it is an alphabetic character, then
                 encrypts it based on its case.
 ****************************************************************/
-char encrypt(const char& x) {
+char encrypt(const char &x) {
     // Check to see if the character is a letter
     if (isalpha(x)) {
         // If the character is a letter, check for its ASCII value and decide which encryption function to use
@@ -46,7 +46,7 @@ char encrypt(const char& x) {
    NOTES:      This function encrypts an uppercase character to its
                 ASCII value + 13, wrapping around if necessary.
 ****************************************************************/
-char encryptUpper(const char& x) {
+char encryptUpper(const char &x) {
     // Adds 13 to the ASCII value
     int fun = x + 13;
 
@@ -55,7 +55,7 @@ char encryptUpper(const char& x) {
         fun = (fun % 26) + 65;
 
     // Return the encrypted character
-    return (char)fun;
+    return (char) fun;
 }
 
 /****************************************************************
@@ -68,7 +68,7 @@ char encryptUpper(const char& x) {
    NOTES:      This function encrypts an lowercase character to its
                 ASCII value + 13, wrapping around if necessary.
 ****************************************************************/
-char encryptLower(const char& x) {
+char encryptLower(const char &x) {
     // Add 13 to the ASCII value
     int fun = x + 13;
 
@@ -77,6 +77,6 @@ char encryptLower(const char& x) {
         fun = (fun % 26) + 97;
 
     // Return the encrypted character
-    return (char)fun;
+    return (char) fun;
 }
 
